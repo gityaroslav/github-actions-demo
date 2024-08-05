@@ -1,3 +1,5 @@
+import uuid
+
 from flask import Flask
 from dotenv import load_dotenv
 import os
@@ -14,6 +16,7 @@ def return_backwards_string(random_string):
 
 @app.route('/get-mode')
 def get_mode():
+    raise Exception()
     return os.environ.get('MODE')
 
 
