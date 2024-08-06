@@ -16,7 +16,7 @@ jobs:
         python-version: [3.12]
 
     env:
-      MODE: ${{ secret.MODE}}
+      MODE: ${{ secret.MODE }}
 
     steps:
       - uses: actions/checkout@v3
